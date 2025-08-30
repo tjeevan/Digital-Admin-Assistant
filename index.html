@@ -24,95 +24,95 @@
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4 sm:p-8 flex flex-col items-center min-h-screen">
 
     <div class="w-full max-w-4xl bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-700 dark:to-gray-800 rounded-2xl shadow-xl overflow-hidden p-6 sm:p-10 transition-all duration-300">
-      
-      <header class="mb-8 text-center flex flex-col items-center">
-        <img src="https://raw.githubusercontent.com/tjeevan/Digital-Admin-Assistant/main/logo.png" alt="Digital Admin Assistant Logo" class="h-32 w-32 rounded-full transition-all duration-300 transform hover:scale-110 mb-4">
         
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-          <span>Digital Admin Assistant</span>
-        </h1>
-        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-          Search for guidance on administrative inquiries based on the Establishment Code.
-        </p>
-      </header>
-      
-      <div class="mb-6">
-        <input
-          id="search-input"
-          type="text"
-          placeholder="Type your inquiry (e.g., 'unauthorized absence' or 'mishandled property')"
-          class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
-        />
-      </div>
-      
-      <div id="results-container" class="space-y-6">
-        <div id="welcome-message" class="bg-gradient-to-br from-green-50 to-teal-100 dark:from-green-800 dark:to-teal-900 p-6 rounded-xl shadow-md transition-all duration-300">
-          <h3 class="text-lg font-bold text-gray-700 dark:text-gray-200 mb-2 flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            <span>Welcome!</span>
-          </h3>
-          <p class="text-gray-600 dark:text-gray-300">Here are some examples of what you can search for:</p>
-          <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-200 mt-4">
-              <li>"unauthorized absence"</li>
-              <li>"staff refusing to work"</li>
-              <li>"misappropriation of funds"</li>
-              <li>"transfer request"</li>
-          </ul>
-          <p class="text-sm italic mt-4 text-gray-500 dark:text-gray-400">This is a prototype. Data is for demonstration purposes only.</p>
+        <header class="mb-8 text-center flex flex-col items-center">
+            <img src="https://raw.githubusercontent.com/tjeevan/Digital-Admin-Assistant/main/logo.png" alt="Digital Admin Assistant Logo" class="h-32 w-32 rounded-full transition-all duration-300 transform hover:scale-110 mb-4">
+            
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
+                <span>Digital Admin Assistant</span>
+            </h1>
+            <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                Search for guidance on administrative inquiries based on the Establishment Code.
+            </p>
+        </header>
+        
+        <div class="mb-6">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Type your inquiry (e.g., 'unauthorized absence' or 'mishandled property')"
+              class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+            />
         </div>
-      </div>
+        
+        <div id="results-container" class="space-y-6">
+            <div id="welcome-message" class="bg-gradient-to-br from-green-50 to-teal-100 dark:from-green-800 dark:to-teal-900 p-6 rounded-xl shadow-md transition-all duration-300">
+              <h3 class="text-lg font-bold text-gray-700 dark:text-gray-200 mb-2 flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Welcome!</span>
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300">Here are some examples of what you can search for:</p>
+              <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-200 mt-4">
+                  <li>"unauthorized absence"</li>
+                  <li>"staff refusing to work"</li>
+                  <li>"misappropriation of funds"</li>
+                  <li>"transfer request"</li>
+              </ul>
+              <p class="text-sm italic mt-4 text-gray-500 dark:text-gray-400">This is a prototype. Data is for demonstration purposes only.</p>
+            </div>
+        </div>
     </div>
 
     <div class="w-full max-w-4xl mt-12 space-y-8">
-      
-      <div class="p-6 sm:p-10 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-800 rounded-2xl shadow-xl transition-all duration-300">
-          <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-              Digital Admin Assistant: A Decision-Support Tool for Administrative Inquiries
-          </h2>
-          <div class="space-y-4 text-gray-700 dark:text-gray-300">
-              <p>
-                  The Digital Admin Assistant is a web-based decision-support tool designed for administrative officers in the Sri Lankan public service. It acts as a smart, digital knowledge base that centralizes and structures the rules and procedures from the Establishment Code. Instead of manually sifting through large volumes of text, officers can use this tool to quickly find relevant regulations for various inquiries and ensure consistency in their decisions.
-              </p>
-              <p>
-                  The tool operates on a rule-based logic system. The core of the application is a database containing key information extracted from the Establishment Code, including:
-              </p>
-              <ul class="list-disc list-inside space-y-2 pl-4">
-                  <li><strong>Observations:</strong> Common administrative issues (e.g., "unauthorized absence," "insubordination").</li>
-                  <li><strong>Section References:</strong> The exact chapter and section from the Establishment Code that applies.</li>
-                  <li><strong>Recommendations:</strong> The recommended actions or procedures to follow based on the rules.</li>
-                  <li><strong>Keywords:</strong> Specific terms that help the search function find relevant entries.</li>
-              </ul>
-              <p>
-                  When a user types a query, the application's search engine processes the input and matches it with the keywords and information in the database. It then displays the most relevant entry, providing a clear observation, the official section reference, and a concise recommendation.
-              </p>
-              <p>
-                  This tool offers several key advantages for administrative and quality review processes: Improved Efficiency, Standardized Decisions, Enhanced Confidence, and Accessibility.
-              </p>
-          </div>
-      </div>
+        
+        <div class="p-6 sm:p-10 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-800 rounded-2xl shadow-xl transition-all duration-300">
+            <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                Digital Admin Assistant: A Decision-Support Tool for Administrative Inquiries
+            </h2>
+            <div class="space-y-4 text-gray-700 dark:text-gray-300">
+                <p>
+                    The Digital Admin Assistant is a web-based decision-support tool designed for administrative officers in the Sri Lankan public service. It acts as a smart, digital knowledge base that centralizes and structures the rules and procedures from the Establishment Code. Instead of manually sifting through large volumes of text, officers can use this tool to quickly find relevant regulations for various inquiries and ensure consistency in their decisions.
+                </p>
+                <p>
+                    The tool operates on a rule-based logic system. The core of the application is a database containing key information extracted from the Establishment Code, including:
+                </p>
+                <ul class="list-disc list-inside space-y-2 pl-4">
+                    <li><strong>Observations:</strong> Common administrative issues (e.g., "unauthorized absence," "insubordination").</li>
+                    <li><strong>Section References:</strong> The exact chapter and section from the Establishment Code that applies.</li>
+                    <li><strong>Recommendations:</strong> The recommended actions or procedures to follow based on the rules.</li>
+                    <li><strong>Keywords:</strong> Specific terms that help the search function find relevant entries.</li>
+                </ul>
+                <p>
+                    When a user types a query, the application's search engine processes the input and matches it with the keywords and information in the database. It then displays the most relevant entry, providing a clear observation, the official section reference, and a concise recommendation.
+                </p>
+                <p>
+                    This tool offers several key advantages for administrative and quality review processes: Improved Efficiency, Standardized Decisions, Enhanced Confidence, and Accessibility.
+                </p>
+            </div>
+        </div>
 
-      <div class="p-6 sm:p-10 bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-800 dark:to-teal-900 rounded-2xl shadow-xl transition-all duration-300">
-          <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-              Developer
-          </h2>
-          <div class="text-gray-700 dark:text-gray-300 space-y-4">
-              <p>
-                  Under the vision of ‘Transforming Public Administration through Digital Innovation’, this platform was developed and is actively maintained by:
-              </p>
-              <p>
-                  <strong>Dr. T. Jeevaraaj</strong><br>
-                  MBBS, MCGP, MSc in Biomedical Informatics<br>
-                  Medical Officer – Health Information<br>
-                  Office of Regional Director of Health Services, Trincomalee
-              </p>
-              <p>
-                  🔗 GitHub: <a href="https://github.com/jeevantjr" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200" target="_blank">https://github.com/jeevantjr</a>
-              </p>
-              <p class="mt-4 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-sm italic">
-                  This is a prototype and a continuous plan to maintain and upgrade for the benefit of public administrative officers. Your feedback is highly valuable for this ongoing development. Please share your thoughts via email at <a href="mailto:moinformationtco@gmail.com" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200">moinformationtco@gmail.com</a>.
-              </p>
-          </div>
-      </div>
+        <div class="p-6 sm:p-10 bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-800 dark:to-teal-900 rounded-2xl shadow-xl transition-all duration-300">
+            <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                Developer
+            </h2>
+            <div class="text-gray-700 dark:text-gray-300 space-y-4">
+                <p>
+                    Under the vision of ‘Transforming Public Administration through Digital Innovation’, this platform was developed and is actively maintained by:
+                </p>
+                <p>
+                    <strong>Dr. T. Jeevaraaj</strong><br>
+                    MBBS, MCGP, MSc in Biomedical Informatics<br>
+                    Medical Officer – Health Information<br>
+                    Office of Regional Director of Health Services, Trincomalee
+                </p>
+                <p>
+                    🔗 GitHub: <a href="https://github.com/jeevantjr" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200" target="_blank">https://github.com/jeevantjr</a>
+                </p>
+                <p class="mt-4 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-sm italic">
+                    This is a prototype and a continuous plan to maintain and upgrade for the benefit of public administrative officers. Your feedback is highly valuable for this ongoing development. Please share your thoughts via email at <a href="mailto:moinformationtco@gmail.com" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200">moinformationtco@gmail.com</a>.
+                </p>
+            </div>
+        </div>
     </div>
     
     <a href="mailto:moinformationtco@gmail.com" class="fixed bottom-6 right-6 p-4 rounded-full bg-blue-600 dark:bg-blue-500 text-white shadow-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-300 z-50 flex items-center justify-center space-x-2">
@@ -262,7 +262,6 @@
         // Function to render a single result item
         function renderResultItem(item) {
             const style = categoryStyles[item.category] || categoryStyles.default;
-
             const resultDiv = document.createElement('div');
             resultDiv.className = `bg-gradient-to-br ${style.bg} p-6 rounded-xl shadow-md transition-transform transform hover:scale-[1.01] duration-200 border-l-4 ${style.border}`;
             resultDiv.innerHTML = `
@@ -303,11 +302,11 @@
         // Function to handle the search logic and render results
         function handleSearch() {
             const query = searchInput.value.toLowerCase().trim();
-            resultsContainer.innerHTML = ''; // Clear previous results
 
             if (query.length > 2) {
-                welcomeMessage.style.display = 'none';
-
+                welcomeMessage.classList.add('hidden');
+                resultsContainer.innerHTML = '';
+                
                 const queryWords = query.split(' ').filter(word => word.length > 2);
                 
                 if (queryWords.length === 0) {
@@ -328,12 +327,15 @@
                     });
                 }
             } else {
-                welcomeMessage.style.display = 'block';
+                welcomeMessage.classList.remove('hidden');
+                resultsContainer.innerHTML = '';
             }
         }
 
-        // Add event listener to the search input
+        // Add event listener to the search input and trigger on page load for initial state
         searchInput.addEventListener('input', handleSearch);
+        window.onload = handleSearch;
     </script>
 </body>
 </html>
+
