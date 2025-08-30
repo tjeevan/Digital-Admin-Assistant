@@ -9,6 +9,16 @@
     <style>
       body {
         font-family: 'Inter', sans-serif;
+        background: radial-gradient(circle at top left, #dbeafe, transparent),
+                    radial-gradient(circle at bottom right, #e0f2fe, transparent),
+                    #f3f4f6;
+        background-attachment: fixed;
+      }
+      .dark body {
+        background: radial-gradient(circle at top left, #1f2937, transparent),
+                    radial-gradient(circle at bottom right, #2c3e50, transparent),
+                    #111827;
+        background-attachment: fixed;
       }
     </style>
 </head>
@@ -44,15 +54,19 @@
       <!-- Search Results Display -->
       <div id="results-container" class="space-y-6">
         <!-- Initial welcome message -->
-        <div id="welcome-message" class="text-gray-500 dark:text-gray-400 space-y-4">
-          <p>Welcome to the Digital Admin Assistant. Here are some examples of what you can search for:</p>
-          <ul class="list-disc list-inside space-y-2 pl-4">
-            <li>"unauthorized absence"</li>
-            <li>"staff refusing to work"</li>
-            <li>"misappropriation of funds"</li>
-            <li>"transfer request"</li>
-          </ul>
-          <p class="text-sm italic mt-4">This is a prototype. Data is for demonstration purposes only.</p>
+        <div id="welcome-message" class="bg-gradient-to-br from-green-50 to-teal-100 dark:from-green-800 dark:to-teal-900 p-6 rounded-xl shadow-md transition-all duration-300">
+            <h3 class="text-lg font-bold text-gray-700 dark:text-gray-200 mb-2 flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>Welcome!</span>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">Here are some examples of what you can search for:</p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-200 mt-4">
+                <li>"unauthorized absence"</li>
+                <li>"staff refusing to work"</li>
+                <li>"misappropriation of funds"</li>
+                <li>"transfer request"</li>
+            </ul>
+            <p class="text-sm italic mt-4 text-gray-500 dark:text-gray-400">This is a prototype. Data is for demonstration purposes only.</p>
         </div>
       </div>
     </div>
@@ -296,7 +310,7 @@
 
                 const filteredResults = mockKnowledgeBase.filter(item => {
                     const searchableText = `${item.observation.toLowerCase()} ${item.sectionReference.toLowerCase()} ${item.recommendation.toLowerCase()} ${item.keywords.join(' ').toLowerCase()}`;
-                    return queryWords.some(word => searchableText.includes(word));
+                    return queryWords.every(word => searchableText.includes(word));
                 });
 
                 if (filteredResults.length === 0) {
