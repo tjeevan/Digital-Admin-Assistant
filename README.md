@@ -37,8 +37,8 @@ JavaScript: Powers the search logic and dynamic content rendering.
 This platform was developed and is actively maintained by:
 
 Dr. T. Jeevaraaj
-MBBS, MCGP, MSc in Biomedical Informatics
-Medical Officer – Health Information
+MBBS, MCGP, MSc in Biomedical Informatics,
+Medical Officer – Health Information,
 Office of Regional Director of Health Services, Trincomalee
 
 🔗 GitHub: https://github.com/jeevantjr
