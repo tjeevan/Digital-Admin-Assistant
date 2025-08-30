@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Admin Assistant</title>
-    <!-- Tailwind CSS from CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
@@ -24,14 +23,12 @@
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4 sm:p-8 flex flex-col items-center min-h-screen">
 
-    <!-- Main container with max width for better readability -->
     <div class="w-full max-w-4xl bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-700 dark:to-gray-800 rounded-2xl shadow-xl overflow-hidden p-6 sm:p-10 transition-all duration-300">
       
-      <!-- Header Section -->
-      <header class="mb-8 text-center">
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-2 flex items-center justify-center space-x-2">
-          <!-- Logo Image added here -->
-          <img src="https://raw.githubusercontent.com/tjeevan/Digital-Admin-Assistant/main/logo.png" alt="Digital Admin Assistant Logo" class="h-10 w-10 rounded-full mr-2">
+      <header class="mb-8 text-center flex flex-col items-center">
+        <img src="https://raw.githubusercontent.com/tjeevan/Digital-Admin-Assistant/main/logo.png" alt="Digital Admin Assistant Logo" class="h-16 w-16 rounded-full transition-all duration-300 transform hover:scale-110 mb-4">
+        
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
           <span>Digital Admin Assistant</span>
         </h1>
         <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">
@@ -39,7 +36,6 @@
         </p>
       </header>
       
-      <!-- Search Bar -->
       <div class="mb-6">
         <input
           id="search-input"
@@ -49,9 +45,7 @@
         />
       </div>
       
-      <!-- Search Results Display -->
       <div id="results-container" class="space-y-6">
-        <!-- Initial welcome message -->
         <div id="welcome-message" class="bg-gradient-to-br from-green-50 to-teal-100 dark:from-green-800 dark:to-teal-900 p-6 rounded-xl shadow-md transition-all duration-300">
           <h3 class="text-lg font-bold text-gray-700 dark:text-gray-200 mb-2 flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
@@ -69,10 +63,8 @@
       </div>
     </div>
 
-    <!-- About and Developer Information Section -->
     <div class="w-full max-w-4xl mt-12 p-6 sm:p-10 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
       <div class="space-y-8">
-          <!-- About the Tool -->
           <div>
               <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
                   Digital Admin Assistant: A Decision-Support Tool for Administrative Inquiries
@@ -101,7 +93,6 @@
 
           <hr class="border-t-2 border-gray-200 dark:border-gray-700">
 
-          <!-- Developer Information -->
           <div>
               <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
                   Developer
