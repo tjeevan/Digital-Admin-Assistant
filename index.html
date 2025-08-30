@@ -30,10 +30,8 @@
       <!-- Header Section -->
       <header class="mb-8 text-center">
         <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-2 flex items-center justify-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 dark:text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83l-.52.52a2 2 0 0 1-2.83 0L17 19.4a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.28 0 1.65 1.65 0 0 0-1.82.33l-.06-.06a2 2 0 0 1-2.83 0l-.52-.52a2 2 0 0 1 0-2.83L5.4 17a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0 0-2.54 1.65 1.65 0 0 0 .33-1.82l-.06-.06a2 2 0 0 1 0-2.83l.52-.52a2 2 0 0 1 2.83 0L7 5.4a1.65 1.65 0 0 0 1.82.33 1.65 1.65 0 0 0 2.54 0l.06-.06a2 2 0 0 1 2.83 0l.52.52a2 2 0 0 1 0 2.83L17 8.6a1.65 1.65 0 0 0 .33 1.82 1.65 1.65 0 0 0 0 2.54 1.65 1.65 0 0 0-.33 1.82z"></path>
-          </svg>
+          <!-- Logo Image added here -->
+          <img src="https://raw.githubusercontent.com/tjeevan/Digital-Admin-Assistant/main/logo.png" alt="Digital Admin Assistant Logo" class="h-10 w-10 rounded-full mr-2">
           <span>Digital Admin Assistant</span>
         </h1>
         <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">
@@ -55,78 +53,78 @@
       <div id="results-container" class="space-y-6">
         <!-- Initial welcome message -->
         <div id="welcome-message" class="bg-gradient-to-br from-green-50 to-teal-100 dark:from-green-800 dark:to-teal-900 p-6 rounded-xl shadow-md transition-all duration-300">
-            <h3 class="text-lg font-bold text-gray-700 dark:text-gray-200 mb-2 flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              <span>Welcome!</span>
-            </h3>
-            <p class="text-gray-600 dark:text-gray-300">Here are some examples of what you can search for:</p>
-            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-200 mt-4">
-                <li>"unauthorized absence"</li>
-                <li>"staff refusing to work"</li>
-                <li>"misappropriation of funds"</li>
-                <li>"transfer request"</li>
-            </ul>
-            <p class="text-sm italic mt-4 text-gray-500 dark:text-gray-400">This is a prototype. Data is for demonstration purposes only.</p>
+          <h3 class="text-lg font-bold text-gray-700 dark:text-gray-200 mb-2 flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>Welcome!</span>
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">Here are some examples of what you can search for:</p>
+          <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700 dark:text-gray-200 mt-4">
+              <li>"unauthorized absence"</li>
+              <li>"staff refusing to work"</li>
+              <li>"misappropriation of funds"</li>
+              <li>"transfer request"</li>
+          </ul>
+          <p class="text-sm italic mt-4 text-gray-500 dark:text-gray-400">This is a prototype. Data is for demonstration purposes only.</p>
         </div>
       </div>
     </div>
 
     <!-- About and Developer Information Section -->
     <div class="w-full max-w-4xl mt-12 p-6 sm:p-10 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
-        <div class="space-y-8">
-            <!-- About the Tool -->
-            <div>
-                <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-                    Digital Admin Assistant: A Decision-Support Tool for Administrative Inquiries
-                </h2>
-                <div class="space-y-4 text-gray-700 dark:text-gray-300">
-                    <p>
-                        The Digital Admin Assistant is a web-based decision-support tool designed for administrative officers in the Sri Lankan public service. It acts as a smart, digital knowledge base that centralizes and structures the rules and procedures from the Establishment Code. Instead of manually sifting through large volumes of text, officers can use this tool to quickly find relevant regulations for various inquiries and ensure consistency in their decisions.
-                    </p>
-                    <p>
-                        The tool operates on a rule-based logic system. The core of the application is a database containing key information extracted from the Establishment Code, including:
-                    </p>
-                    <ul class="list-disc list-inside space-y-2 pl-4">
-                        <li><strong>Observations:</strong> Common administrative issues (e.g., "unauthorized absence," "insubordination").</li>
-                        <li><strong>Section References:</strong> The exact chapter and section from the Establishment Code that applies.</li>
-                        <li><strong>Recommendations:</strong> The recommended actions or procedures to follow based on the rules.</li>
-                        <li><strong>Keywords:</strong> Specific terms that help the search function find relevant entries.</li>
-                    </ul>
-                    <p>
-                        When a user types a query, the application's search engine processes the input and matches it with the keywords and information in the database. It then displays the most relevant entry, providing a clear observation, the official section reference, and a concise recommendation.
-                    </p>
-                    <p>
-                        This tool offers several key advantages for administrative and quality review processes: Improved Efficiency, Standardized Decisions, Enhanced Confidence, and Accessibility.
-                    </p>
-                </div>
-            </div>
+      <div class="space-y-8">
+          <!-- About the Tool -->
+          <div>
+              <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                  Digital Admin Assistant: A Decision-Support Tool for Administrative Inquiries
+              </h2>
+              <div class="space-y-4 text-gray-700 dark:text-gray-300">
+                  <p>
+                      The Digital Admin Assistant is a web-based decision-support tool designed for administrative officers in the Sri Lankan public service. It acts as a smart, digital knowledge base that centralizes and structures the rules and procedures from the Establishment Code. Instead of manually sifting through large volumes of text, officers can use this tool to quickly find relevant regulations for various inquiries and ensure consistency in their decisions.
+                  </p>
+                  <p>
+                      The tool operates on a rule-based logic system. The core of the application is a database containing key information extracted from the Establishment Code, including:
+                  </p>
+                  <ul class="list-disc list-inside space-y-2 pl-4">
+                      <li><strong>Observations:</strong> Common administrative issues (e.g., "unauthorized absence," "insubordination").</li>
+                      <li><strong>Section References:</strong> The exact chapter and section from the Establishment Code that applies.</li>
+                      <li><strong>Recommendations:</strong> The recommended actions or procedures to follow based on the rules.</li>
+                      <li><strong>Keywords:</strong> Specific terms that help the search function find relevant entries.</li>
+                  </ul>
+                  <p>
+                      When a user types a query, the application's search engine processes the input and matches it with the keywords and information in the database. It then displays the most relevant entry, providing a clear observation, the official section reference, and a concise recommendation.
+                  </p>
+                  <p>
+                      This tool offers several key advantages for administrative and quality review processes: Improved Efficiency, Standardized Decisions, Enhanced Confidence, and Accessibility.
+                  </p>
+              </div>
+          </div>
 
-            <hr class="border-t-2 border-gray-200 dark:border-gray-700">
+          <hr class="border-t-2 border-gray-200 dark:border-gray-700">
 
-            <!-- Developer Information -->
-            <div>
-                <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-                    Developer
-                </h2>
-                <div class="text-gray-700 dark:text-gray-300 space-y-4">
-                    <p>
-                        Under the vision of ‘Transforming Public Administration through Digital Innovation’, this platform was developed and is actively maintained by:
-                    </p>
-                    <p>
-                        <strong>Dr. T. Jeevaraaj</strong><br>
-                        MBBS, MCGP, MSc in Biomedical Informatics<br>
-                        Medical Officer – Health Information<br>
-                        Office of Regional Director of Health Services, Trincomalee
-                    </p>
-                    <p>
-                        🔗 GitHub: <a href="https://github.com/jeevantjr" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200" target="_blank">https://github.com/jeevantjr</a>
-                    </p>
-                    <p class="mt-4 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-sm italic">
-                        This is a prototype and a continuous plan to maintain and upgrade for the benefit of public administrative officers. Your feedback is highly valuable for this ongoing development. Please share your thoughts via email at <a href="mailto:moinformationtco@gmail.com" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200">moinformationtco@gmail.com</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
+          <!-- Developer Information -->
+          <div>
+              <h2 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                  Developer
+              </h2>
+              <div class="text-gray-700 dark:text-gray-300 space-y-4">
+                  <p>
+                      Under the vision of ‘Transforming Public Administration through Digital Innovation’, this platform was developed and is actively maintained by:
+                  </p>
+                  <p>
+                      <strong>Dr. T. Jeevaraaj</strong><br>
+                      MBBS, MCGP, MSc in Biomedical Informatics<br>
+                      Medical Officer – Health Information<br>
+                      Office of Regional Director of Health Services, Trincomalee
+                  </p>
+                  <p>
+                      🔗 GitHub: <a href="https://github.com/jeevantjr" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200" target="_blank">https://github.com/jeevantjr</a>
+                  </p>
+                  <p class="mt-4 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-sm italic">
+                      This is a prototype and a continuous plan to maintain and upgrade for the benefit of public administrative officers. Your feedback is highly valuable for this ongoing development. Please share your thoughts via email at <a href="mailto:moinformationtco@gmail.com" class="text-blue-500 hover:text-blue-400 underline transition-colors duration-200">moinformationtco@gmail.com</a>.
+                  </p>
+              </div>
+          </div>
+      </div>
     </div>
 
     <script>
